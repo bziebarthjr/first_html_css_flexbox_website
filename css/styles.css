@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+font-family: arial;
+font-size: 24pt;
+text-align: center;
+}
+
+p, ol {
+font-family: arial;
+font-size: 12pt;
+text-align: left;
+}
+
+.header  {
+  font-family: monospace;
+  background: black;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 900;
+  color: tomato;
+  padding: 4px 32px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.right-links {
+ display: flex;
+}
+
+
+/* First section with heading and picture */
+
+.section1 {
+  display: flex;
+  background-color: black;
+  margin-left: auto;
+  justify-content: center;
+  padding: 2rem 0px;
+  align-items: center;
+}
+
+.subsection1 {
+  
+}
+
+/* Certifications Section */
+.certification_section {
+  padding: 1rem;
+  display: flex;
+  background-color: white;
+  flex: 1;
+  flex-direction: row;
+  flex-basis: 100%;
+flex-wrap: wrap;
+}
+
+.certification_subsection {
+  color: black;
+  flex-grow: 1;
+  margin: 5px;
+  flex-basis: 100%;
+}
+
+/* Pictures Section */
+.cert_images {
+  background-color: white;
+  display: flex;
+  flex: 1;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* About Me Section */
+.box {
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: stretch;
+gap: 10rem;
+flex-wrap: wrap;
+}
+
+.box1 {
+flex-basis: 25%;
+background-color: white;
+text-color: black;
+text-align: center;
+padding: 20px;
+}
+
+.box2{
+flex-basis: 25%;
+background-color: white;
+text-align: center;
+align-items: stretch;
+padding: 20px;
+}
+
+
+
+
+/* Media Call */
+@media (min-width: 750px) {
+  .certficiation_section {
+    flex-direction: column;
+  }
+
+/*  .cert_images {
+    flex-direction: column;
+  } */ 
+
+  .section1 {
+   flex-direction: column;
+  }
+
+ul {
+flex-direction: column;
+}
+
+}
+
